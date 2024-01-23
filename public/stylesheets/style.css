@@ -1,8 +1,36 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.container {
+  display: grid;
+  border: 2px solid red;
+  width: fit-content;
+  
+}
+
+.container div span {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  
+}
+
+.container div:nth-child(odd) span:nth-child(even) {
+  background-color: red;
+}
+.container div:nth-child(odd) span:nth-child(odd) {
+  background-color: green;
+}
+.container div:nth-child(even) span:nth-child(even) {
+  background-color: green;
+}
+
+.container div:nth-child(even) span:nth-child(odd) {
+  background-color: red;
 }
